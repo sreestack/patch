@@ -8,7 +8,7 @@ server=''
 COUNT=0
 def auth_token():
         url = "https://api.cloud.fmr.com/auth"
-        headers = {'X-Auth-User':"aid",'X-Auth-Password':"passwd"}
+        headers = {'X-Auth-User':"aid",'X-Auth-Key':"passwd"}
         response = requests.request("GET",url,headers=headers,verify='FECA.cer')
         if response.status_code == 200:
                 print('Auth Token obtained Successfully ')
