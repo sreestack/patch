@@ -87,7 +87,8 @@ def vmstart(idnumber,name):
 
  
 
- 
+auth_token() 
+print( vmname,aid,passwd)
+#get_vmid(vmname)
 
-get_vmid(vmname)
 
