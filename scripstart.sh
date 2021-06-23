@@ -11,7 +11,7 @@ aid = sys.argv[1]
 token = sys.argv[2]
 box = sys.argv[3]
 
- 
+print (aid,token,box) 
 
 def auth_token():
         url = "https://api.cloud.fmr.com/auth"
@@ -78,4 +78,4 @@ def vmstart(idnumber,name):
 
  
 
-get_vmid(box)
+#get_vmid(box)
