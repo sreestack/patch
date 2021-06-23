@@ -4,8 +4,9 @@ from datetime import *
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 import time as t
 from os import system
-server=''
-COUNT=0
+aid = sys.argv[1]
+passwd = sys.argv[2]
+vmname = sys.argv[3]
 def auth_token():
         url = "https://api.cloud.fmr.com/auth"
         headers = {'X-Auth-User':"aid",'X-Auth-Key':"passwd"}
@@ -88,13 +89,5 @@ def vmstart(idnumber,name):
 
  
 
-parser = argparse.ArgumentParser()
-parser.add_argument("echo")
-vmid = parser.parse_args()
-box = vmid.echo
+get_vmid(vmname)
 
- 
-
-
-#auth_token()
-get_vmid(box)
