@@ -78,4 +78,4 @@ def vmstart(idnumber,name):
 
  
 
-#get_vmid(box)
+get_vmid(box)
